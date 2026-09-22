@@ -1,0 +1,256 @@
+@charset "UTF-8";
+* {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            color: #111827;
+            background-color: #ffffff;
+            line-height: 1.6;
+        }
+
+        .grid-bg {
+            background-size: 32px 32px;
+            background-image: 
+                linear-gradient(to right, rgba(0, 0, 0, 0.05) 1px, transparent 1px),
+                linear-gradient(to bottom, rgba(0, 0, 0, 0.05) 1px, transparent 1px);
+        }
+
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 48px;
+            background-color: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(8px);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 800;
+            color: #000000;
+            text-decoration: none;
+            letter-spacing: -0.5px;
+        }
+
+        .nav-links {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            background-color: rgba(0, 0, 0, 0.03);
+            padding: 6px;
+            border-radius: 9999px;
+            border: 1px solid rgba(0, 0, 0, 0.06);
+        }
+
+        .nav-item {
+            text-decoration: none;
+            color: #4b5563;
+            font-size: 15px;
+            font-weight: 500;
+            padding: 8px 22px;
+            border-radius: 9999px;
+            border: 1.5px solid transparent;
+            transition: all 0.2s ease;
+        }
+
+        .nav-item:hover {
+            color: #111827;
+        }
+
+        .nav-item.active {
+            border-color: #111827;
+            background-color: #ffffff;
+            color: #111827;
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+        }
+
+        .cta-btn {
+            text-decoration: none;
+            background-color: #000000;
+            color: #ffffff;
+            padding: 10px 24px;
+            border-radius: 9999px;
+            font-size: 14px;
+            font-weight: 600;
+            transition: all 0.2s ease;
+        }
+
+        .cta-btn:hover {
+            opacity: 0.88;
+            transform: translateY(-1px);
+        }
+
+        .hero {
+            padding: 80px 48px;
+            max-width: 1280px;
+            margin: 0 auto;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 48px;
+        }
+
+        .hero-text {
+            flex: 1;
+            max-width: 580px;
+        }
+
+        .hero-title {
+            font-size: 56px;
+            font-weight: 800;
+            line-height: 1.15;
+            letter-spacing: -1.5px;
+            margin-bottom: 20px;
+            color: #000000;
+        }
+
+        .hero-subtitle {
+            font-size: 20px;
+            color: #4b5563;
+            margin-bottom: 32px;
+            font-weight: 400;
+        }
+
+        .read-btn {
+            display: inline-block;
+            background-color: #000000;
+            color: #ffffff;
+            padding: 14px 32px;
+            border-radius: 9999px;
+            font-size: 15px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: all 0.2s ease;
+        }
+
+        .read-btn:hover {
+            opacity: 0.88;
+        }
+
+        .hero-graphic {
+            flex: 1;
+            display: flex;
+            justify-content: center;
+        }
+
+        .graphic-card {
+            position: relative;
+            width: 100%;
+            max-width: 440px;
+            height: 380px;
+            background: linear-gradient(135deg, rgba(238,242,255,0.8), rgba(251,207,232,0.5), rgba(224,231,255,0.8));
+            border-radius: 28px;
+            border: 1px solid rgba(255,255,255,0.8);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.03);
+        }
+
+        .graphic-text {
+            font-size: 140px;
+            font-weight: 900;
+            letter-spacing: -6px;
+            background: linear-gradient(135deg, #4f46e5, #9333ea, #c026d3);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            user-select: none;
+        }
+
+        .badge-apex {
+            position: absolute;
+            top: 40px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #fce7f3;
+            color: #be185d;
+            border: 1px solid #fbcfe8;
+            padding: 2px 10px;
+            border-radius: 6px;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .badge-tail {
+            position: absolute;
+            bottom: 30px;
+            right: 60px;
+            background-color: #0f172a;
+            color: #ffffff;
+            padding: 3px 10px;
+            border-radius: 6px;
+            font-size: 11px;
+            font-weight: 700;
+            letter-spacing: 1px;
+        }
+
+        .quote-banner {
+            background: linear-gradient(135deg, #c084fc, #e879f9, #a855f7);
+            padding: 80px 48px;
+        }
+
+        .quote-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .fh1 {
+            font-family: "Valley Sans", "Inter", sans-serif;
+            color: rgba(255, 255, 255, 0.75);
+            font-size: 2rem;
+            font-weight: 700;
+            font-style: normal;
+            line-height: 1.4;
+            margin-bottom: 24px;
+        }
+
+        .author {
+            font-family: "Valley Sans", "Inter", sans-serif;
+            color: rgba(255, 255, 255, 0.75);
+            font-size: 1.25rem;
+            font-weight: 700;
+            font-style: normal;
+        }
+
+        .grid-section {
+            padding: 80px 48px;
+            max-width: 1280px;
+            margin: 0 auto;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 40px; /* Fixed: added space between columns */
+            justify-content: center;
+        }
+
+        .grid-item {
+            padding: 24px;
+            background-color: #ffffff;
+            border-radius: 16px;
+        }
+
+        .grid-title {
+            font-size: 32px;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: #000000;
+        }
+
+        .grid-content {
+            font-family: "DM Sans", sans-serif;
+            font-size: 1.05rem;
+            font-weight: 400; /* Fixed: font-weight without px */
+            font-style: normal;
+            color: #374151;
+            line-height: 1.7;
+        }
